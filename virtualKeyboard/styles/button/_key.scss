@@ -1,0 +1,75 @@
+.key{
+      cursor: pointer;
+      position: relative;
+      min-width: 46px;
+      height: 46px;
+      background-color: #fff;
+      color: #777;
+      margin: 3px;
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .2s;
+
+      &:hover{
+            transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      &:active,
+      &.activeLetter{
+                transform: translateY(-1px);
+                background: rgb(207, 207, 207);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      .prefix{
+            position: absolute;
+            left: 3px;
+            top: 3px;
+      }
+
+
+
+}
+
+#backspace{
+      width: 104px;
+}
+#tab{
+      width: 50px;
+}
+#delete{
+      width: 48px;
+}
+#caps{
+      &::after{
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            border-radius: 100%;
+            right: 10px;
+            background: rgb(0, 255, 0);
+            box-shadow: 0 0px 4px lightgreen;
+            transition: .2s;
+            opacity: 0;
+      }
+      &.active::after{
+            opacity: 1;
+      }
+      width: 106px;
+}
+#enter{
+      width: 96px;
+}
+#ShiftLeft{
+      width: 104px;
+}
+
+#ControlLeft,
+#ControlRight{
+      width: 57px;
+}
+#space{
+      width: 342px;
+}

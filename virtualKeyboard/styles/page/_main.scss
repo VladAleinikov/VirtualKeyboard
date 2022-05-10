@@ -1,0 +1,52 @@
+*{
+      margin: 0;padding: 0;
+}
+body{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+textarea{
+      width: 800px;
+      height: 200px;
+
+}
+.keyboard{
+      position: relative;
+      width: 786px;
+      height: 286px;
+      padding: 10px;
+      background: rgb(199, 199, 199);
+      display: flex;
+      flex-wrap: wrap;
+
+      div{
+                  display: flex;
+      flex-wrap: wrap;
+      }
+}
+
+img{
+      width: 20px;
+      height: 20px;
+}
+
+#language{
+      position: absolute;
+      
+      width: 247px;
+      height: 18px;
+      padding: 6px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      right: -253px;
+      background: #fff;
+      color: #777;
+      border-radius: 3px;
+box-shadow: 0 0px 25px rgba(0, 0, 0, 0.4);
+}
